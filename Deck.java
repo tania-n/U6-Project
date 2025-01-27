@@ -34,11 +34,13 @@ public class Deck{
     } 
     
     public Card deal(){ 
-        if(cards.length > 0){ 
+        if(size == 0){ 
+            return null;
+        }
+        else{
             size--; 
-        } 
-        
-        return cards[size]; 
+            return cards[size];
+        }
         
         /*if(cards.length > 0){ 
             size--; 
